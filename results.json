@@ -1,0 +1,219 @@
+{
+  "results": {
+    "avgAnswerFound": 0,
+    "avgPercentageFound": 0.06999999999999999,
+    "avgAvgRank": 8
+  },
+  "questions": [
+    {
+      "question": "What did Gina want her customers to feel in her store?",
+      "answer": "D3:6,D3:8: cozy and comfortable",
+      "dialogues": [
+        "D3:3, Wow, Gina! You found the perfect spot for your store. Way to go, hard work's paying off!",
+        "D8:21, Gina, good luck with your store!",
+        "D4:1, Hey Gina! What's up? How's the store going? I gotta tell you about this thing with my biz.",
+        "D12:4, Way to go, Gina! You really stepped up. What's your plan for the future?",
+        "D8:1, Hey Gina, I had to shut down my bank account. It was tough, but I needed to do it for my biz.",
+        "D7:1, Hey Gina, how's it going?",
+        "D2:2, Hey Gina! Whoa, your store looks great! All your hard work really paid off - congrats! Must be awesome to see your stuff on display.",
+        "D19:3, Ha, ha! Thanks, Gina. Sounds familiar, who do those words belong to?",
+        "D11:15, Wow, Gina, I'm stoked about this! Taking a risk is scary, but I'm sure following my dreams will pay off in the end. How did the interview go?",
+        "D16:2, Congrats on your store, Gina! Happy for you! It looks sick - is it a unique piece you're selling?"
+      ],
+      "results": {
+        "answerFound": false,
+        "percentageFound": 0,
+        "avgRank": 10
+      }
+    },
+    {
+      "question": "What does Jon plan to do at the grand opening of his dance studio?",
+      "answer": "D15:9: savor all the good vibes",
+      "dialogues": [
+        "D4:10, Searching for the perfect dance studio's a tough job, Jon. Hang in there and you'll find it soon!",
+        "D11:12, That's a great dream, Jon! Giving people a place to express themselves with dance is really important. Your studio is gonna make a huge difference. Can't wait to see it happen!",
+        "D9:2, Hey Jon! Wow, way to take your passion and make it into a biz! The dance studio looks awesome.",
+        "D12:9, Woah, Jon, that whiteboard's got a bunch of good ideas! How you gonna keep track and stay on schedule with those dates?",
+        "D18:9, Wow, Jon! Congrats on the successful night! What are your plans now with the advice you got?",
+        "D18:11, Sounds like a great plan, Jon! An online platform can really show off your studio and get investors. Need help with anything?",
+        "D1:13, Sounds great, Jon! Next Friday works. Let's boogie!",
+        "D7:6, Thanks for the advice, Jon! Building relationships and creating a strong brand image for my store is something I'm always working on. You're right, staying positive is key. What helps you stay motivated with your dance studio business?",
+        "D4:12, Wow, Jon! You're so talented! What show ya got planned?",
+        "D18:21, Yeah Jon! Let's make a difference and show 'em what we got. We can do amazing things together!"
+      ],
+      "results": {
+        "answerFound": false,
+        "percentageFound": 0,
+        "avgRank": 10
+      }
+    },
+    {
+      "question": "Did Jon and Gina both participate in dance competitions?",
+      "answer": "D1:14,D14:14,D1:16,D1:17,D9:10: Yes",
+      "dialogues": [
+        "D1:16, Woah, that pic's from when my dance crew took home first in a local comp last year. It was amazing up on that stage! I'm super keen to spread that intensity with other peeps. Gina, you ever been in any dance comps or shows?",
+        "D9:6, Wow Jon, you look so happy when you dance! Show the world your true self and keep dancing!",
+        "D13:5, Thanks, Gina! It's been so inspiring to work with our young dancers, seeing their passion and commitment. Opening the dance studio's been a great experience - I want it to be a place of support and encouragement for all our dancers. Will you show me this presentation?",
+        "D1:18, Wow! Winning first place is amazing! What dance were you doing?",
+        "D18:20, Yeah, Gina! We'll rock the dance floor and teach others to chase their dreams. Let's go for it and make an impact!",
+        "D9:2, Hey Jon! Wow, way to take your passion and make it into a biz! The dance studio looks awesome.",
+        "D4:12, Wow, Jon! You're so talented! What show ya got planned?",
+        "D4:10, Searching for the perfect dance studio's a tough job, Jon. Hang in there and you'll find it soon!",
+        "D11:11, I hope so, Gina. I want to create a place for people to dance and express themselves - it's been a dream of mine.",
+        "D11:18, Wow! That's great. Dancing is awesome for staying focused. Wanna show me a routine sometime?"
+      ],
+      "results": {
+        "answerFound": false,
+        "percentageFound": 0.2,
+        "avgRank": 0
+      }
+    },
+    {
+      "question": "What does Gina say about the dancers in the photo?",
+      "answer": "D1:26: They look graceful",
+      "dialogues": [
+        "D19:3, Ha, ha! Thanks, Gina. Sounds familiar, who do those words belong to?",
+        "D1:8, Cool, Gina! I love all dances, but contemporary is my top pick. It's so expressive and powerful! What's your fave?",
+        "D1:16, Woah, that pic's from when my dance crew took home first in a local comp last year. It was amazing up on that stage! I'm super keen to spread that intensity with other peeps. Gina, you ever been in any dance comps or shows?",
+        "D18:20, Yeah, Gina! We'll rock the dance floor and teach others to chase their dreams. Let's go for it and make an impact!",
+        "D15:3, Thanks, Gina. Still working on opening a dance studio.",
+        "D13:5, Thanks, Gina! It's been so inspiring to work with our young dancers, seeing their passion and commitment. Opening the dance studio's been a great experience - I want it to be a place of support and encouragement for all our dancers. Will you show me this presentation?",
+        "D5:2, Hey Gina! Congrats on the new fashion piece! Looks like your store is growing. Remenber the festival I told you about? Had that performance and it was awesome - so many people there complementing my dance moves. Dancing brings me joy and it was nice to be reminded why I'm passionate about it.",
+        "D11:11, I hope so, Gina. I want to create a place for people to dance and express themselves - it's been a dream of mine.",
+        "D17:2, Hey Gina! Congrats on the fashion editors reach-out, that's awesome! Dance practice has been fun and exhausting. I'm gonna stay determined and make my own path by going full-time with my biz idea.",
+        "D8:5, Nice one, Gina! Love how you never give up. What helps you stay motivated?"
+      ],
+      "results": {
+        "answerFound": false,
+        "percentageFound": 0,
+        "avgRank": 10
+      }
+    },
+    {
+      "question": "When did Gina start being recognized by fashion editors?",
+      "answer": "D17:1: July 2023",
+      "dialogues": [
+        "D19:3, Ha, ha! Thanks, Gina. Sounds familiar, who do those words belong to?",
+        "D12:2, Congrats, Gina! That's awesome news about the fashion internship. 🎉 So stoked for you. Where is the internship and how're you feelin' about it?",
+        "D1:16, Woah, that pic's from when my dance crew took home first in a local comp last year. It was amazing up on that stage! I'm super keen to spread that intensity with other peeps. Gina, you ever been in any dance comps or shows?",
+        "D3:3, Wow, Gina! You found the perfect spot for your store. Way to go, hard work's paying off!",
+        "D5:2, Hey Gina! Congrats on the new fashion piece! Looks like your store is growing. Remenber the festival I told you about? Had that performance and it was awesome - so many people there complementing my dance moves. Dancing brings me joy and it was nice to be reminded why I'm passionate about it.",
+        "D8:7, Wow, that's great! What made you combine clothing biz and dance?",
+        "D17:2, Hey Gina! Congrats on the fashion editors reach-out, that's awesome! Dance practice has been fun and exhausting. I'm gonna stay determined and make my own path by going full-time with my biz idea.",
+        "D8:21, Gina, good luck with your store!",
+        "D11:15, Wow, Gina, I'm stoked about this! Taking a risk is scary, but I'm sure following my dreams will pay off in the end. How did the interview go?",
+        "D14:1, Gina, you won't believe it - I got mentored by this amazing business dude yesterday! It was really inspiring and now I'm even more pumped to chase my dreams. What's been up with you lately?"
+      ],
+      "results": {
+        "answerFound": false,
+        "percentageFound": 0,
+        "avgRank": 10
+      }
+    },
+    {
+      "question": "When Gina has lost her job at Door Dash?",
+      "answer": "D1:3: January, 2023",
+      "dialogues": [
+        "D3:3, Wow, Gina! You found the perfect spot for your store. Way to go, hard work's paying off!",
+        "D4:3, Hey Gina! I'm putting in a lot of work on my business even with the obstacles. I'm gonna make it happen!",
+        "D1:2, Hey Gina! Good to see you too. Lost my job as a banker yesterday, so I'm gonna take a shot at starting my own business.",
+        "D7:1, Hey Gina, how's it going?",
+        "D8:1, Hey Gina, I had to shut down my bank account. It was tough, but I needed to do it for my biz.",
+        "D15:21, Definitely! Let's make tomorrow unforgettable, Gina. See you there! Bye!",
+        "D19:3, Ha, ha! Thanks, Gina. Sounds familiar, who do those words belong to?",
+        "D19:11, Thanks, Gina! I won't quit. I'm gonna keep going, whatever comes my way.",
+        "D18:20, Yeah, Gina! We'll rock the dance floor and teach others to chase their dreams. Let's go for it and make an impact!",
+        "D8:21, Gina, good luck with your store!"
+      ],
+      "results": {
+        "answerFound": false,
+        "percentageFound": 0,
+        "avgRank": 10
+      }
+    },
+    {
+      "question": "What did Gina find for her clothing store on 1 February, 2023?",
+      "answer": "D3:2: The perfect spot for her store",
+      "dialogues": [
+        "D8:21, Gina, good luck with your store!",
+        "D3:3, Wow, Gina! You found the perfect spot for your store. Way to go, hard work's paying off!",
+        "D4:1, Hey Gina! What's up? How's the store going? I gotta tell you about this thing with my biz.",
+        "D19:3, Ha, ha! Thanks, Gina. Sounds familiar, who do those words belong to?",
+        "D16:2, Congrats on your store, Gina! Happy for you! It looks sick - is it a unique piece you're selling?",
+        "D18:2, Hey Gina, congrats on the clothing store! The dance studio is on tenuous grounds right now, but I'm staying positive. I got a temp job to help cover expenses while I look for investors. It's tough, but I'm sure it'll be worth it.",
+        "D8:7, Wow, that's great! What made you combine clothing biz and dance?",
+        "D2:2, Hey Gina! Whoa, your store looks great! All your hard work really paid off - congrats! Must be awesome to see your stuff on display.",
+        "D12:4, Way to go, Gina! You really stepped up. What's your plan for the future?",
+        "D12:2, Congrats, Gina! That's awesome news about the fashion internship. 🎉 So stoked for you. Where is the internship and how're you feelin' about it?"
+      ],
+      "results": {
+        "answerFound": false,
+        "percentageFound": 0,
+        "avgRank": 10
+      }
+    },
+    {
+      "question": "When is Jon's group performing at a festival?",
+      "answer": "D1:24: February, 2023",
+      "dialogues": [
+        "D1:13, Sounds great, Jon! Next Friday works. Let's boogie!",
+        "D4:12, Wow, Jon! You're so talented! What show ya got planned?",
+        "D12:9, Woah, Jon, that whiteboard's got a bunch of good ideas! How you gonna keep track and stay on schedule with those dates?",
+        "D15:4, When are you opening the studio?",
+        "D4:10, Searching for the perfect dance studio's a tough job, Jon. Hang in there and you'll find it soon!",
+        "D11:12, That's a great dream, Jon! Giving people a place to express themselves with dance is really important. Your studio is gonna make a huge difference. Can't wait to see it happen!",
+        "D11:8, I get it, Jon. Dance is just me -- I can't picture life without it. It's like air.",
+        "D15:12, I'll be right by your side, Jon. Let's live it up and make some great memories tomorrow. So excited!",
+        "D9:2, Hey Jon! Wow, way to take your passion and make it into a biz! The dance studio looks awesome.",
+        "D18:21, Yeah Jon! Let's make a difference and show 'em what we got. We can do amazing things together!"
+      ],
+      "results": {
+        "answerFound": false,
+        "percentageFound": 0,
+        "avgRank": 10
+      }
+    },
+    {
+      "question": "Which city have both Jean and John visited?",
+      "answer": "D2:5,D15:1: Rome",
+      "dialogues": [
+        "D2:5, Wow, nice spot! Where is it? Got any other features you want to think about before you decide? Paris?! That is really great Jon! Never had a chance to visit it. Been only to Rome once.",
+        "D2:4, Hey Gina! Thanks for asking. I'm on the hunt for the ideal spot for my dance studio and it's been quite a journey! I've been looking at different places and picturing how the space would look. I even found a place with great natural light! Oh, I've been to Paris yesterday! It was sooo cool.",
+        "D2:6, It's downtown which is awesome cuz it's easy to get to. Plus the natural light! Gotta check the size & floor quality too. We need a good dance floor with enough bounce for me & my students to dance safely.",
+        "D1:22, Hopefully, we will find a place like this that will inspire us!",
+        "D19:3, Ha, ha! Thanks, Gina. Sounds familiar, who do those words belong to?",
+        "D1:3, Sorry about your job Jon, but starting your own business sounds awesome! Unfortunately, I also lost my job at Door Dash this month. What business are you thinking of?",
+        "D1:16, Woah, that pic's from when my dance crew took home first in a local comp last year. It was amazing up on that stage! I'm super keen to spread that intensity with other peeps. Gina, you ever been in any dance comps or shows?",
+        "D4:12, Wow, Jon! You're so talented! What show ya got planned?",
+        "D16:1, Hey Jon, what's been up? Some pretty cool stuff happened since we talked. I have acquired some new unique pieces for my store.",
+        "D4:9, Searching for a dance studio location has been tricky, but I'm determined to find the right spot - when I do, I'm sure the rest will follow!"
+      ],
+      "results": {
+        "answerFound": false,
+        "percentageFound": 0.5,
+        "avgRank": 0
+      }
+    },
+    {
+      "question": "What do Jon and Gina both have in common?",
+      "answer": "D1:2,D1:3,D1:4,D2:1: They lost their jobs and decided to start their own businesses.",
+      "dialogues": [
+        "D19:3, Ha, ha! Thanks, Gina. Sounds familiar, who do those words belong to?",
+        "D4:12, Wow, Jon! You're so talented! What show ya got planned?",
+        "D1:5, That's cool, Jon! What got you into this biz?",
+        "D17:5, Go get 'em, Jon!",
+        "D11:8, I get it, Jon. Dance is just me -- I can't picture life without it. It's like air.",
+        "D1:8, Cool, Gina! I love all dances, but contemporary is my top pick. It's so expressive and powerful! What's your fave?",
+        "D7:1, Hey Gina, how's it going?",
+        "D19:8, I'm so happy to see my words motivating you, Jon. <3",
+        "D9:6, Wow Jon, you look so happy when you dance! Show the world your true self and keep dancing!",
+        "D18:20, Yeah, Gina! We'll rock the dance floor and teach others to chase their dreams. Let's go for it and make an impact!"
+      ],
+      "results": {
+        "answerFound": false,
+        "percentageFound": 0,
+        "avgRank": 10
+      }
+    }
+  ]
+}
