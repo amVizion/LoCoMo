@@ -14,14 +14,14 @@ const euclideanDistance = (a: number[], b: number[]) => {
 
 type Distance = 'cosine' | 'euclidean'
 export const findAnswers = (question:iQuestion, metric?:Distance, topAnswers?:number) => {
-    const distances = conversations.map(({ embeddings, id, text, speaker }) => {
+    const distances = conversations.map(({ embeddings, ...c }) => {
         if(metric === 'euclidean') {
             const distance = euclideanDistance(question!.embeddings, embeddings)
-            return { distance, id, text, speaker }
+            return { distance, ...c }
         }
 
         const distance = cosineSimilarity(question!.embeddings, embeddings)
-        return { distance, id, text, speaker }
+        return { distance, ...c }
     })
 
     const sorted = distances.sort((a, b) => b.distance - a.distance)

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "init": "npx ts-node 1.Init.ts",
-    "eval": "npx ts-node 3.Eval.ts"
+    "eval": "npx ts-node 3.Eval.ts",
+    "infer": "npx ts-node 4.Infer.ts"
   },
   "repository": {
     "type": "git",
@@ -15,7 +16,8 @@
   "license": "ISC",
   "dependencies": {
     "@tensorflow-models/universal-sentence-encoder": "^1.3.3",
-    "@tensorflow/tfjs-node": "^4.20.0"
+    "@tensorflow/tfjs-node": "^4.20.0",
+    "axios": "^1.8.1"
   },
   "bugs": {
     "url": "https://github.com/amVizion/locomo/issues"

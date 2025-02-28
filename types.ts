@@ -12,4 +12,5 @@ export interface iDialogue {
     id: string
     text: string
     speaker: string
+    date_time:string
 }

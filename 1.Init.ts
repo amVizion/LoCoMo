@@ -21,10 +21,10 @@ const getTexts = () => {
     const sessionKeys = sessions.filter(key => !key.includes('date_time'))
 
     // For every session get the text. 
-    const texts = sessionKeys.map(key => conversation[key as keyof typeof conversation])
-    .map(conversation => (conversation as []).map(({ text, dia_id, speaker }) => 
-        ({id:dia_id, text, speaker})
-    )).flat()
+    const texts = sessionKeys.map(key => (conversation[key as keyof typeof conversation] as any[]).map(s => ({
+        id: s.dia_id, text: s.text, speaker: s.speaker, 
+        date_time: conversation[`${key}_date_time` as keyof typeof conversation]
+    }))).flat()
 
     return texts
 }
@@ -39,7 +39,7 @@ const embedTexts = async(texts:string[]) => {
 }
 
 const initMemory = async() => {
-    const conversations = getTexts()
+    const conversations = getTexts() 
     const texts = conversations.map(({ text }) => text)
     const embeddings = await embedTexts(texts)
     const embeddedConversations = conversations.map((c, i) => ({...c, embeddings:embeddings[i]}))
