@@ -4,8 +4,8 @@
 
 */ 
 
-import dialogues from './conversations.json'
-import questions from './questions.json'
+import dialogues from '../data/conversations.json'
+import questions from '../data/questions.json'
 
 // Get center for a set of N dimensional vectors
 const averageCenter = (points: number[][]) => {

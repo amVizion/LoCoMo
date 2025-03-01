@@ -3,7 +3,7 @@
     Stores encoded questions & answers.
 */
 
-import data from './data.json'
+import data from '../data/data.json'
 
 import * as use from '@tensorflow-models/universal-sentence-encoder'
 import '@tensorflow/tfjs-node'
@@ -43,13 +43,20 @@ const initMemory = async() => {
     const texts = conversations.map(({ text }) => text)
     const embeddings = await embedTexts(texts)
     const embeddedConversations = conversations.map((c, i) => ({...c, embeddings:embeddings[i]}))
-    writeFileSync('conversations.json', JSON.stringify(embeddedConversations))
+    writeFileSync('./data/conversations.json', JSON.stringify(embeddedConversations))
 
     const { qa } = data
     const questions = qa.map(({ question }) => question)
     const questionEmbeddings = await embedTexts(questions)
     const embeddedQuestions = qa.map((q, i) => ({...q, embeddings:questionEmbeddings[i]}))
-    writeFileSync('questions.json', JSON.stringify(embeddedQuestions))
+    writeFileSync('./data/questions.json', JSON.stringify(embeddedQuestions))
+
+    const { session_summary } = data
+    const sessionKeys = Object.keys(session_summary)
+    const summaryTexts = sessionKeys.map(key => session_summary[key as keyof typeof session_summary])
+    const summaryEmbeddings = await embedTexts(texts)
+    const summaries = summaryTexts.map((s, i) => ({summary:s, idx:i, embeddings:summaryEmbeddings[i]}))
+    writeFileSync('./data/summaries.json', JSON.stringify(summaries))
 }
 
 initMemory()

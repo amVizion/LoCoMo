@@ -4,9 +4,10 @@
   "description": "Training package",
   "main": "index.js",
   "scripts": {
-    "init": "npx ts-node 1.Init.ts",
-    "eval": "npx ts-node 3.Eval.ts",
-    "infer": "npx ts-node 4.Infer.ts"
+    "init": "npx ts-node baseline/1.Init.ts",
+    "base-eval": "npx ts-node baseline/3.Eval.ts",
+    "base-infer": "npx ts-node baseline/4.Infer.ts",
+    "adan": "npx ts-node advanced/adanAI.ts"
   },
   "repository": {
     "type": "git",

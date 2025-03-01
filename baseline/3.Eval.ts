@@ -1,9 +1,10 @@
-import questions from './questions.json'
-
-import { iDialogue, iQuestion } from './types'
-import { findAnswers } from './2.FindAnswers'
+import questions from '../data/questions.json'
 import { writeFileSync } from 'fs'
+
+import { iDialogue, iQuestion } from '../types'
+import { findAnswers } from './2.FindAnswers'
 import { getDelta } from './5.Analysis'
+
 
 const logs = {
     results: {},
