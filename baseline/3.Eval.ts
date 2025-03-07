@@ -43,7 +43,7 @@ const evaluate = (sample?:number, useDelta?:boolean) => {
     const results = data.map(q => {
         const delta = useDelta ? getDelta() : q.embeddings.map(() => 0)
         const question = {...q, embeddings: q.embeddings.map((val, i) => val + delta[i])}
-        const answers = findAnswers(question as iQuestion)
+        const answers = findAnswers({question: question as iQuestion})
         return evaluateAnswers(answers as iDialogue[], question as iQuestion)
     })
 

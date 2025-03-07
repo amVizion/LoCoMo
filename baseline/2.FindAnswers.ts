@@ -35,4 +35,3 @@ export const findAnswers = ({ question, metric, topAnswers, textType }: iFindAns
 }
 
 // First question, which retrieval distance is better: euclidean or cosine?
-

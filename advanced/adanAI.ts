@@ -1,43 +1,86 @@
-import { findAnswers } from '../baseline/2.FindAnswers'
-import { callOllama } from '../baseline/4.Infer'
-import questions from '../data/questions.json'
 import SUMMARIES from '../data/summaries.json'
-import { iQuestion, iSummary } from '../types'
+import CONVERSATIONS from '../data/conversations.json'
+import QUESTIONS from '../data/questions.json'
 
-const getPrompt = (summary:string, question:string) => {
-    return `
-Summary:
-${summary}
+import { callOllama } from '../baseline/4.Infer'
+import { findAnswers } from '../baseline/2.FindAnswers'
+import { iDialogue, iQuestion, iSummary } from '../types'
 
-Given the summary above, determine if you have enough information to answer the following question. Question:
-${question}
+// PROMPTS
+const VALIDATE_INFO_PROMPT = (info:string, question:string) => `
+INFORMATION:
+${info}
 
-Reply exactly with "yes" or "no".
-`
+Given the information above, determine if you have enough information to answer the following question. 
+
+Question: ${question}
+
+Reply with "YES" or "NO".
+` 
+
+const validateInfo = async(text:string, question:string) => {
+    const prompt = VALIDATE_INFO_PROMPT(text, question)
+    const response = await callOllama(prompt)
+    const cleanResponse = response.toUpperCase().trim().substring(0, 3)
+
+    if (cleanResponse === 'YES') return true
+    return false    
 }
 
-const selectSummary = async(question:iQuestion) => {
-    const input = { question, textType: 'summary' as const, topAnswers: SUMMARIES.length }
-    const summaries = findAnswers(input) as iSummary[]
-    for (const {summary, idx} of summaries) {
-        const prompt = getPrompt(summary, question.question)
-        const response = await callOllama(prompt)
-        if (response === 'yes') return idx
+
+const ANSWER_QUESTION_PROMPT = (information:string, question:string) => `
+INFORMATION:
+${information}
+
+Given the information above attempt to answer the following question.
+Question: ${question}
+`
+
+interface iIndexMemory {
+    type: 'SUMMARY' | 'CONVERSATION' 
+    index: number
+}
+
+// TODO: Refactor
+const getInfo = (indexMemory:iIndexMemory) => {
+    // 1. Start with the most relevant summary.
+    // 2. Continue with conversations.
+    // 3. Use the index as memory.
+}
+
+export const adanAI = async(question:iQuestion) => {
+    let index = 0
+    let information = ''
+
+    const summaries = findAnswers({ question, topAnswers:SUMMARIES.length, textType:'summary' }) as iSummary[]
+    const conversations = findAnswers({ question, topAnswers:CONVERSATIONS.length, textType:'conversation' }) as iDialogue[]
+
+    // 1. Obtener la informacion (conversacion o pregunta).
+    while (true) {
+        information = summaries[index].summary
+
+        // 2. Validar la informacion y continuar al siguiente paso.
+        const summaryInfo = await validateInfo(information, question.question)
+        if (summaryInfo === true) break
+
+        // Get next 10 conversations based on index.
+        const rawConversations = conversations.slice(index*10, (index*10) + 10)
+
+        // Parse conversations into bullet point text.
+        information = rawConversations.map(c => `- ${c.speaker} (${c.date_time}): ${c.text}`).join('\n')
+        const conversationInfo = await validateInfo(information, question.question)
+        if (conversationInfo === true) break
+
+        index++
     }
 
-    return 0
+    // 3. Resolver la pregunta
+    const prompt = ANSWER_QUESTION_PROMPT(information, question.question)
+    const response = await callOllama(prompt)
+    console.log('response', response)
+
+    return response
 }
 
-const evaluateSummary = async() => {
-    const categoryQuestions = questions.filter(({ category }) => category === 2)
-    const question = categoryQuestions[Math.floor(Math.random() * categoryQuestions.length)] as iQuestion
+adanAI(QUESTIONS[0] as iQuestion)
 
-    const idx = await selectSummary(question)
-    const { evidence } = question
-
-    const truth = evidence[0].split(':')[0].slice(1)
-    console.log(idx, truth)
-    return (idx + 1) === parseInt(truth)
-}
-
-evaluateSummary().then(console.log)

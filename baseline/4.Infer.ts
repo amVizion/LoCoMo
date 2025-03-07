@@ -21,23 +21,23 @@ const getPrompt = (dialogues:iDialogue[], question:iQuestion) => {
 Context:
 ${dialogues.map(d => `- ${d.speaker} (${d.date_time}): ${d.text}`).join('\n')}
 
-Given the information above attempt to answer the following question. Question:
-${question.question}
+Given the information above attempt to answer the following question.
+Question: ${question.question}
 `
 }
 
 const inference = async() => {
     const question = questions.sort(() => Math.random() - 0.5)[0] as iQuestion
-    const answer = question.answer || question.adversarial_answer
     const dialogues = findAnswers({question})
 
     const prompt = getPrompt(dialogues as iDialogue[], question as iQuestion)
     const response = await callOllama(prompt)
 
     console.log('question', question.question)
-    console.log('answer', answer)
-
     console.log('response', response)
+
+    const answer = question.answer || question.adversarial_answer
+    console.log('answer', answer)
 
     const score = execSync(`bert-score --lang en -r "${answer}" -c "${response}"`)
     console.log('score', score.toString().replace(/['"]+/g, ''))
