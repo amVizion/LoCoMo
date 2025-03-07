@@ -12,4 +12,11 @@ export interface iDialogue {
     id: string
     text: string
     speaker: string
+    date_time:string
+}
+
+export interface iSummary {
+    embeddings: number[]
+    summary: string
+    idx: number
 }

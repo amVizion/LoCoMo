@@ -4,8 +4,14 @@
   "description": "Training package",
   "main": "index.js",
   "scripts": {
-    "init": "npx ts-node 1.Init.ts",
-    "eval": "npx ts-node 3.Eval.ts"
+    "init": "npx ts-node baseline/1.Init.ts",
+    "base-eval": "npx ts-node baseline/3.Eval.ts",
+    "base-infer": "npx ts-node baseline/4.Infer.ts",
+    "adan": "npx ts-node advanced/adanAI.ts",
+    "memory-rag": "npx ts-node advanced/memoryRAG.ts",
+    "ma-memory": "npx ts-node advanced/maMemory.ts",
+    "ma-reasoning": "npx ts-node advanced/maReasoning.ts",
+    "start": "npx ts-node discord/index.ts"
   },
   "repository": {
     "type": "git",
@@ -15,7 +21,12 @@
   "license": "ISC",
   "dependencies": {
     "@tensorflow-models/universal-sentence-encoder": "^1.3.3",
-    "@tensorflow/tfjs-node": "^4.20.0"
+    "@tensorflow/tfjs-node": "^4.20.0",
+    "axios": "^1.8.1",
+    "discord-interactions": "^4.0.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+
   },
   "bugs": {
     "url": "https://github.com/amVizion/locomo/issues"

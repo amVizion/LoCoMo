@@ -1,8 +1,10 @@
-import questions from './questions.json'
-
-import { iDialogue, iQuestion } from './types'
-import { findAnswers } from './2.FindAnswers'
+import questions from '../data/questions.json'
 import { writeFileSync } from 'fs'
+
+import { iDialogue, iQuestion } from '../types'
+import { findAnswers } from './2.FindAnswers'
+import { getDelta } from './5.Analysis'
+
 
 const logs = {
     results: {},
@@ -34,12 +36,14 @@ const evaluateAnswers = (dialogues:iDialogue[], question:iQuestion) => {
     return results
 }
 
-const evaluate = (sample?:number) => {
+const evaluate = (sample?:number, useDelta?:boolean) => {
     const data = sample ? questions.sort(() => Math.random() - 0.5).slice(0, sample) : questions
 
     // For each question in data, find relevant answers.
-    const results = data.map(question => {
-        const answers = findAnswers(question as iQuestion)
+    const results = data.map(q => {
+        const delta = useDelta ? getDelta() : q.embeddings.map(() => 0)
+        const question = {...q, embeddings: q.embeddings.map((val, i) => val + delta[i])}
+        const answers = findAnswers({question: question as iQuestion})
         return evaluateAnswers(answers as iDialogue[], question as iQuestion)
     })
 
@@ -51,8 +55,11 @@ const evaluate = (sample?:number) => {
 
     logs.results = finalResults
 
-    writeFileSync('results.json', JSON.stringify(logs, null, 2))
+    const date = new Date().toISOString().replace(/:/g, '-')
+    const fileName = `results/${date}${useDelta ? '-delta' : ''}.json`
+    writeFileSync(fileName, JSON.stringify(logs, null, 2))
     return finalResults
 }
 
-evaluate(10)
+evaluate(100)
+evaluate(100, true)
