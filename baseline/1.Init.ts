@@ -59,4 +59,4 @@ const initMemory = async() => {
     writeFileSync('./data/summaries.json', JSON.stringify(summaries))
 }
 
-initMemory()
+// initMemory()
