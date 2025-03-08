@@ -11,6 +11,7 @@
     "memory-rag": "npx ts-node advanced/memoryRAG.ts",
     "ma-memory": "npx ts-node advanced/maMemory.ts",
     "ma-reasoning": "npx ts-node advanced/maReasoning.ts",
+    "kn-init": "npx ts-node knowledge/construction",
     "start": "npx ts-node discord/index.ts"
   },
   "repository": {
