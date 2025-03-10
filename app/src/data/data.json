@@ -1,0 +1,158 @@
+[
+  {
+    "x": -0.04319332994156455,
+    "y": 0.052690310792870634,
+    "question": "When Jon has lost his job as a banker?",
+    "cluster": 0
+  },
+  {
+    "x": 0.020669514693364734,
+    "y": 0.07236069895127482,
+    "question": "When Gina has lost her job at Door Dash?",
+    "cluster": 3
+  },
+  {
+    "x": 0.012113126906533274,
+    "y": 0.01850864506205948,
+    "question": "When is Jon's group performing at a festival?",
+    "cluster": 3
+  },
+  {
+    "x": 0.0276512211760036,
+    "y": 0.012163085006168238,
+    "question": "When did Gina launch an ad campaign for her store?",
+    "cluster": 3
+  },
+  {
+    "x": -0.027272094447978366,
+    "y": 0.018957545814143842,
+    "question": "When was Jon in Paris?",
+    "cluster": 0
+  },
+  {
+    "x": 0.07098785116259837,
+    "y": -0.023062653295276354,
+    "question": "When did Gina team up with a local artist for some cool designs?",
+    "cluster": 2
+  },
+  {
+    "x": 0.042320619919358766,
+    "y": 0.030185595218915392,
+    "question": "When did Gina get her tattoo?",
+    "cluster": 3
+  },
+  {
+    "x": -0.022825868694926487,
+    "y": 0.03922632899829691,
+    "question": "When did Jon start to go to the gym?",
+    "cluster": 0
+  },
+  {
+    "x": 0.02795544582907912,
+    "y": -0.002216131073347738,
+    "question": "When did Gina open her online clothing store?",
+    "cluster": 3
+  },
+  {
+    "x": -0.07207420521484825,
+    "y": -0.019662692958334522,
+    "question": "When did Jon start expanding his studio's social media presence?",
+    "cluster": 1
+  },
+  {
+    "x": 0.022230451423512675,
+    "y": 0.025756440763151416,
+    "question": "When did Jon host a dance competition?",
+    "cluster": 3
+  },
+  {
+    "x": -0.024727356197438245,
+    "y": 0.03479434547799227,
+    "question": "When did Jon go to a fair to get more exposure for his dance studio?",
+    "cluster": 0
+  },
+  {
+    "x": 0.019871409159754765,
+    "y": -0.08213752813345127,
+    "question": "When did Gina interview for a design internship?",
+    "cluster": 4
+  },
+  {
+    "x": 0.02443486584490015,
+    "y": -0.04938890611725305,
+    "question": "When did Gina get accepted for the design internship?",
+    "cluster": 2
+  },
+  {
+    "x": -0.06036176939996183,
+    "y": -0.026581203488773308,
+    "question": "When did Jon start reading \"The Lean Startup\"?",
+    "cluster": 1
+  },
+  {
+    "x": 0.034359516538316065,
+    "y": -0.06501408124029162,
+    "question": "When did Gina develop a video presentation to teach how to style her fashion pieces? ",
+    "cluster": 2
+  },
+  {
+    "x": -0.07286225968108068,
+    "y": -0.00032248155466543804,
+    "question": "When did Jon receive mentorship to promote his venture?",
+    "cluster": 1
+  },
+  {
+    "x": 0.0378729202407592,
+    "y": 0.00953136779968724,
+    "question": "When was Jon in Rome?",
+    "cluster": 3
+  },
+  {
+    "x": -0.036865327868294634,
+    "y": 0.021686530094580048,
+    "question": "When Jon is planning to open his dance studio?",
+    "cluster": 0
+  },
+  {
+    "x": 0.01644491527305955,
+    "y": 0.008570607543621166,
+    "question": "When did Gina design a limited collection of hoodies?",
+    "cluster": 3
+  },
+  {
+    "x": -0.08726678598545198,
+    "y": -0.002943518242106778,
+    "question": "When did Jon visit networking events for his store?",
+    "cluster": 1
+  },
+  {
+    "x": 0.020968420925862763,
+    "y": -0.04609025705756327,
+    "question": "When did Gina start being recognized by fashion editors?",
+    "cluster": 2
+  },
+  {
+    "x": -0.01645491590490115,
+    "y": -0.07725317658966939,
+    "question": "When did Jon start learning marketing and analytics tools?",
+    "cluster": 4
+  },
+  {
+    "x": -0.051677271279127246,
+    "y": -0.0017054778886775104,
+    "question": "When did Jon and Gina decide to collaborate to create dance content?",
+    "cluster": 0
+  },
+  {
+    "x": 0.056389045082701234,
+    "y": 0.00830029169894397,
+    "question": "When did Gina mention Shia Labeouf?",
+    "cluster": 3
+  },
+  {
+    "x": 0.08131186043976923,
+    "y": 0.043646314417704835,
+    "question": "When did Gina go to a dance class with a group of friends?",
+    "cluster": 3
+  }
+]
