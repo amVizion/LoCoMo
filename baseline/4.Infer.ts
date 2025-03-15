@@ -8,10 +8,10 @@ import axios from 'axios'
 export const callOllama = async(prompt:string) => {
     const OLLAMA_URL = 'http://localhost:11434/api/generate'
 
-    console.log(prompt)
+    console.log('prompt', prompt)
     const request = { prompt, model:'mistral', stream:false, verbose:true }
     const { data } = await axios.post(OLLAMA_URL, request)
-    console.log(data.response)
+    console.log('response', data.response)
 
     return data.response
 }
