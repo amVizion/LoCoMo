@@ -1,0 +1,59 @@
+[
+  {
+    "results": {
+      "avgAnswerFound": 0.21,
+      "avgPercentageFound": 0.217,
+      "avgAvgRank": 8.485
+    },
+    "questions": [
+      {
+        "question": "What made Gina choose the furniture and decor for her store?",
+        "answer": "D3:6: personal style and customer comfort",
+        "dialogues": [
+          "D3:5, Wow, it looks great! Must've taken you ages to design it. What made you pick out the furniture and decor?",
+          "D3:3, Wow, Gina! You found the perfect spot for your store. Way to go, hard work's paying off!",
+          "D8:21, Gina, good luck with your store!",
+          "D16:2, Congrats on your store, Gina! Happy for you! It looks sick - is it a unique piece you're selling?",
+          "D2:2, Hey Gina! Whoa, your store looks great! All your hard work really paid off - congrats! Must be awesome to see your stuff on display.",
+          "D3:6, Thanks! It took a bit of time but I wanted to make the place look like my own style and make my customers feel cozy. I chose furniture that looks great and is comfy too. The chandelier adds a nice glam feel while matching the style of the store.",
+          "D8:7, Wow, that's great! What made you combine clothing biz and dance?",
+          "D19:3, Ha, ha! Thanks, Gina. Sounds familiar, who do those words belong to?",
+          "D1:15, Wow! What did you get?",
+          "D4:1, Hey Gina! What's up? How's the store going? I gotta tell you about this thing with my biz."
+        ],
+        "results": {
+          "answerFound": true,
+          "percentageFound": 1,
+          "avgRank": 5
+        }
+  }]
+  }, {
+    "results": {
+      "avgAnswerFound": 0.25,
+      "avgPercentageFound": 0.252,
+      "avgAvgRank": 8.01
+    },
+    "questions": [
+      {
+        "question": "What made Gina choose the furniture and decor for her store?",
+        "answer": "D3:6: personal style and customer comfort",
+        "dialogues": [
+          "D3:5, Wow, it looks great! Must've taken you ages to design it. What made you pick out the furniture and decor?",
+          "D3:3, Wow, Gina! You found the perfect spot for your store. Way to go, hard work's paying off!",
+          "D8:21, Gina, good luck with your store!",
+          "D16:2, Congrats on your store, Gina! Happy for you! It looks sick - is it a unique piece you're selling?",
+          "D2:2, Hey Gina! Whoa, your store looks great! All your hard work really paid off - congrats! Must be awesome to see your stuff on display.",
+          "D3:6, Thanks! It took a bit of time but I wanted to make the place look like my own style and make my customers feel cozy. I chose furniture that looks great and is comfy too. The chandelier adds a nice glam feel while matching the style of the store.",
+          "D8:7, Wow, that's great! What made you combine clothing biz and dance?",
+          "D19:3, Ha, ha! Thanks, Gina. Sounds familiar, who do those words belong to?",
+          "D1:15, Wow! What did you get?",
+          "D4:1, Hey Gina! What's up? How's the store going? I gotta tell you about this thing with my biz."
+        ],
+        "results": {
+          "answerFound": true,
+          "percentageFound": 1,
+          "avgRank": 5
+        }
+    }]
+  }
+]
